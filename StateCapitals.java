@@ -1,4 +1,5 @@
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -56,5 +57,12 @@ public class StateCapitals {
             System.out.println("The capital of "+currentKey+" is "+currentCapital+".");
         }
         
+        
+        //use a collection to get out all the non-key values
+        //start by creating an empty collectionc
+        Collection<String> capitalValues = capitals.values();
+        for (String currentCapitalValues : capitalValues ) {
+            System.out.println(currentCapitalValues);
+        }
     }
 }
